@@ -62,6 +62,7 @@ int main(int argc, char* argv[]) {
 				        "                - .kicad_mod    : KiCad module\n"
 				        "                - .lht          : pcb-rnd layout\n"
 				        "                - .m            : OpenEMS Octave script\n"
+				        "                - .py           : pyems python script\n"
 				        "  -n NETLIST    Specify a netlist to use instead of calling Qucs to create it from the schematic.\n"
 				        "                Useful when Qucs is not installed, if you use QucsStudio for example.\n"
 				        "  -s            Export each substrate in a different file.\n"
@@ -101,7 +102,8 @@ int main(int argc, char* argv[]) {
 				if(string(argv[i])==".kicad_pcb"
 				|| string(argv[i])==".kicad_mod"
 				|| string(argv[i])==".lht"
-				|| string(argv[i])==".m") {
+				|| string(argv[i])==".m"
+				|| string(argv[i])==".py") {
 					data.out_format=string(argv[i]);
 				} else {
 					log_err << "ERROR : Invalid output format : " << argv[i] << "\n";
