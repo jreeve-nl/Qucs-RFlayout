@@ -46,8 +46,8 @@ int main(int argc, char* argv[]) {
 		for(int i=1;i<argc;i++) {
 			if(string(argv[i])=="-h" || string(argv[i])=="--help") {
 				cout << "Usage: " << argv[0] << " -i FILENAME.sch\n"
-				        "       " << argv[0] << " -i FILENAME.sch -f [.kicad_pcb|.kicad_mod|.lht]\n"
-				        "       " << argv[0] << " -i FILENAME.sch -f [.kicad_pcb|.kicad_mod|.lht] -o DIRNAME\n"
+				        "       " << argv[0] << " -i FILENAME.sch -f [.kicad_pcb|.kicad_mod|.lht|.py]\n"
+				        "       " << argv[0] << " -i FILENAME.sch -f [.kicad_pcb|.kicad_mod|.lht|.py] -o DIRNAME\n"
 				        "       " << argv[0] << " -G\n"
 				        "\n"
 				        "  -h, --help    Display this help and exit.\n"
